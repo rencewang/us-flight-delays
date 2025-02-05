@@ -5,10 +5,10 @@ import Table from './components/table';
 import './general.css';
 
 const Home = () => (
-  <div>
+  <main>
     <Header />
     <Table />
-  </div>
+  </main>
 );
 
 export default Home;

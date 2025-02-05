@@ -9,14 +9,27 @@ const Table = () => {
     <table>
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Value</th>
+          <th>N</th>
+          <th>Title</th>
+          <th>Year</th>
+          <th>Date</th>
+          <th rowspan="3">Category</th>
+          <th rowspan="2">Link</th>
+        </tr>
+        <tr>
+          <th colspan="2">For Projects</th>
+          <th colspan="2">Year</th>
+        </tr>
+        <tr>
+          <th colspan="2">For Art</th>
+          <th colspan="2">Year</th>
+          <th colspan="2">Media</th>
         </tr>
       </thead>
       <tbody>
-        {projects.map((item) => (
-          <Row key={item.id} item={item} />
+        <tr></tr>
+        {projects.map((item, index) => (
+          <Row key={index} item={item} index={index} />
         ))}
       </tbody>
     </table>
