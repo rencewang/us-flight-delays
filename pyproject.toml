@@ -1,0 +1,15 @@
+[project]
+name = "flight-delay-analysis"
+version = "0.1.0"
+description = "US flight delay prediction from BTS on-time data + NOAA weather (LightGBM, calibrated)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.5",
+    "jupyter>=1.1.1",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.11.1",
+    "polars>=1.43.2",
+    "pyarrow>=25.0.1",
+    "scikit-learn>=1.9.0",
+]
